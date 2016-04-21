@@ -6,8 +6,8 @@ import {IStateController} from './state.interface';
  * registerState helper.
  * @return Function which takes a UI Router config object.
  */
-export default function StateConfig(target: any) {
-  return function(config) {
+export default function StateConfig(config: any) {
+  return function(target: any) {
     (<IStateController> target).$uiStateConfig = config;
   }
 }

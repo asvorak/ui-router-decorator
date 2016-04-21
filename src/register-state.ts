@@ -10,7 +10,7 @@ import {IStateController} from './state.interface';
  */
 export default function registerState(target: any) {
   function configFn($stateProvider) {
-    this.$stateProvider.state(getStateConfig(target));
+    $stateProvider.state(getStateConfig(target));
   }
   (<any> configFn).$inject = ['$stateProvider'];
   return configFn;
