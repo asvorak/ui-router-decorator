@@ -9,7 +9,7 @@ import {IStateController} from './state.interface';
  * @return A function which can be passed to angular.config to register the state on the target
  */
 export default function registerState(target: any) {
-  function configFn($stateProvider) {
+  function configFn($stateProvider: angular.ui.IStateProvider) {
     $stateProvider.state(getStateConfig(target));
   }
   (<any> configFn).$inject = ['$stateProvider'];

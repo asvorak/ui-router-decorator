@@ -1,4 +1,4 @@
-import {IStateController} from './state.interface';
+import {IState, IStateController} from './state.interface';
 
 /**
  * Decorator for controller classes for route states. You can reference the class in the
@@ -6,8 +6,8 @@ import {IStateController} from './state.interface';
  * registerState helper.
  * @return Function which takes a UI Router config object.
  */
-export default function StateConfig(config: any) {
+export default function StateConfig(config: IState) {
   return function(target: any) {
     (<IStateController> target).$uiStateConfig = config;
-  }
+  };
 }

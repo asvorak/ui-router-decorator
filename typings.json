@@ -1,0 +1,11 @@
+{
+  "name": "ui-router-decorator",
+  "main": "dist/index.d.ts",
+  "ambientDevDependencies": {
+    "angular": "registry:dt/angular#1.5.0+20160412133217",
+    "jquery": "registry:dt/jquery#1.10.0+20160316155526"
+  },
+  "ambientDependencies": {
+    "angular-ui-router": "registry:dt/angular-ui-router#1.1.5+20160412134757"
+  }
+}
