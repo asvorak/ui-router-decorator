@@ -1,6 +1,6 @@
 # Ignored files
-*.ts
-!*.d.ts
+#*.ts
+#!*.d.ts
 
 # Node generated files
 node_modules

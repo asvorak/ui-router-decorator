@@ -12,6 +12,12 @@
         "typings/main.d.ts",
         "typings/main",
         "node_modules",
+        "@types/angular-ui-router",
+        "angular-ui-router",
+        "angular",
         "dist"
+    ],
+    "files": [
+        "src/index.ts"
     ]
 }

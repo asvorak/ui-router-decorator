@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
+    "prepublish": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "tsc -w",
     "lint": "tslint src/**/*.ts"
@@ -28,8 +29,5 @@
     "tslint": "^3.8.0",
     "typescript": "^1.8.10",
     "typings": "^0.8.1"
-  },
-  "dependencies": {
-    "@types/angular-ui-router": "*"
   }
 }
