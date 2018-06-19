@@ -1,7 +1,7 @@
 # Ignored compiled files
-*.js
-*.map
-*.d.ts
+!*.js
+!*.map
+!*.d.ts
 
 # Node
 node_modules
