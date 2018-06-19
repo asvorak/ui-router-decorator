@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/aciccarello/ui-router-decorator#readme",
   "devDependencies": {
+    "@types/angular-ui-router": "^1.1.40",
     "tslint": "^3.8.0",
     "typescript": "^1.8.10",
     "typings": "^0.8.1"

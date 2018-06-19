@@ -1,5 +1,6 @@
 import getStateConfig from './get-state-config';
 import {IStateController} from './state.interface';
+import {IStateProvider} from '@types/angular-ui-router';
 
 /**
  * Factory function to create a config function that registers an angular config function
@@ -9,7 +10,7 @@ import {IStateController} from './state.interface';
  * @return A function which can be passed to angular.config to register the state on the target
  */
 export default function registerState(target: any) {
-  function configFn($stateProvider: angular.ui.IStateProvider) {
+  function configFn($stateProvider: IStateProvider) {
     $stateProvider.state(getStateConfig(target));
   }
   (<any> configFn).$inject = ['$stateProvider'];
